@@ -1,0 +1,2 @@
+-tracemethod android/widget/Toast.show
+-tracemethod android/text/Html.fromHtml

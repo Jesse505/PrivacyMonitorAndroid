@@ -1,0 +1,14 @@
+apply plugin: 'groovy'
+apply plugin: 'maven'
+
+apply from: 'maven.gradle'
+
+dependencies {
+    compile gradleApi()     //gradle sdk
+    compile localGroovy()   //groovy sdk
+    compileOnly 'com.android.tools.build:gradle:3.5.4'
+}
+
+repositories {
+    jcenter()
+}
