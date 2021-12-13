@@ -1,2 +1,2 @@
-include ':app', ':plugin'
+include ':app', ':plugin', ':collect'
 rootProject.name='PrivacyMonitorAndroid'

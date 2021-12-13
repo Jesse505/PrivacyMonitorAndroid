@@ -7,7 +7,7 @@ import org.objectweb.asm.*
 class TraceClassVisitor extends ClassVisitor implements Opcodes {
 
     private final
-    static String SDK_API_CLASS = "com/android/jesse/privacymonitor/LogUtil"
+    static String SDK_API_CLASS = "com/android/jesse/collect/PrivacyCollect"
 
     TraceBuildConfig mTraceBuildConfig
     String traceClassName
@@ -60,7 +60,7 @@ class TraceClassVisitor extends ClassVisitor implements Opcodes {
                 for (int i = 0; i < monitorMethodSet.size(); i++) {
                     methodVisitor.visitLdcInsn(String.valueOf("${traceClassName.replace("/", ".")}#$name"))
                     methodVisitor.visitLdcInsn(String.valueOf(monitorMethodSet[i]))
-                    methodVisitor.visitMethodInsn(INVOKESTATIC, SDK_API_CLASS, "trackViewOnClick", "(Ljava/lang/String;Ljava/lang/String;)V", false)
+                    methodVisitor.visitMethodInsn(INVOKESTATIC, SDK_API_CLASS, "appendData", "(Ljava/lang/String;Ljava/lang/String;)V", false)
                 }
             }
         }

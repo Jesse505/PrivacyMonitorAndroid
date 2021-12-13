@@ -17,7 +17,7 @@ buildscript {
         // in the individual module build.gradle files
 
         //引入自定义插件
-        classpath 'com.android:jesse.plugin:1.0.17'
+        classpath 'com.android:jesse.plugin:1.0.18'
     }
 }
 

@@ -12,6 +12,6 @@ uploadArchives {
         pom.artifactId = 'jesse.plugin'
 
         //插件版本号
-        pom.version = '1.0.17'
+        pom.version = '1.0.18'
     }
 }
