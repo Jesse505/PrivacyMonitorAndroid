@@ -10,7 +10,7 @@ apply plugin: 'com.android.jesse.privacy-monitor'
 //方法全局替换插件的配置
 privacyTrace {
     enable = true
-    logEnable = false
+    logEnable = true
     traceConfigFile = "${project.projectDir}/privacyTraceConfig.txt"
 }
 

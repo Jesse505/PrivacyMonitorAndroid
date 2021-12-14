@@ -1,2 +1,5 @@
--tracemethod android/widget/Toast.show
--tracemethod android/text/Html.fromHtml
+-tracemethod java/net/NetworkInterface.getHardwareAddress
+-tracemethod android/app/ActivityManager.getRunningTasks
+
+-keeppackage com/android/jesse/collect
+-keepclass com/android/jesse/collect/PrivacyCollect
