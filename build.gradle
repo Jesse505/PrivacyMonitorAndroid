@@ -18,8 +18,8 @@ buildscript {
 
         classpath 'com.github.dcendents:android-maven-gradle-plugin:2.1'
 
-        //引入自定义插件
-        classpath 'com.android:jesse.plugin:1.0.18'
+        //本地插件，调试用
+//        classpath 'com.android:jesse.plugin:1.0.18'
     }
 }
 
