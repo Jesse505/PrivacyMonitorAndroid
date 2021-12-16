@@ -1,4 +1,4 @@
-package com.android.jesse.collect_noop;
+package com.android.jesse.collect;
 
 import android.content.Context;
 
