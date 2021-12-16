@@ -4,13 +4,13 @@ apply plugin: 'kotlin-android'
 
 apply plugin: 'kotlin-android-extensions'
 
-//apply plugin: 'com.android.jesse.privacy-monitor'
-//
-//privacyTrace {
-//    enable = true
-//    logEnable = true
-//    traceConfigFile = "${project.projectDir}/privacyTraceConfig.txt"
-//}
+apply plugin: 'com.android.jesse.privacy-monitor'
+
+privacyTrace {
+    enable = true
+    logEnable = true
+    traceConfigFile = "${project.projectDir}/privacyTraceConfig.txt"
+}
 
 android {
     compileSdkVersion 30
@@ -36,5 +36,7 @@ dependencies {
     implementation 'androidx.appcompat:appcompat:1.0.2'
     implementation 'androidx.core:core-ktx:1.0.2'
     implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
-    implementation project(':collect')
+
+    implementation 'com.github.Jesse505.PrivacyMonitorAndroid:collect:5cd15ce02c'
+//    implementation project(':collect')
 }

@@ -2,7 +2,6 @@ package com.android.jesse.privacymonitor
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.Toast
 import com.android.jesse.collect.PrivacyCollect
 import kotlinx.android.synthetic.main.activity_main.*
 
